@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank yout</title>
-</head>
-<body>
-    <a href="form.html" class="logo">Go back</a>
-
-
-    <h1>Thank you</h1>
-    <h1>Form submitted successfully</h1>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Thank You</title>
+      <style>
+         body{
+         font-family: Arial, sans-serif;
+         }
+         .container{
+         min-height: 100vh;
+         color: rgb(33, 60, 159);
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         }
+         .main{
+         font-size: 32px;
+         font-weight: 900;
+         margin-bottom:0px;
+         }
+         .message{
+         font-size: 28px;
+         padding: 10px;
+         max-width: 800px;
+         margin-top:0;
+         margin-bottom:10px;
+         }
+         .btn {
+         display: inline-block;
+         margin-top: 20px;
+         padding: 12px 30px;
+         background: white;
+         color: #c2c3c6;
+         text-decoration: none;
+         border-radius: 50px;
+         font-weight: bold;
+         box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+         transition: all 0.3s ease;
+         }
+         .btn:hover {
+         background: #0a356d;
+         color: white;
+         transform: scale(1.1);
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <h1 class="main">Thank you</h1>
+         <h2 class="message">Form submitted successfully</h2>
+         <a href="welcome.html" class="btn">Go back</a>
+      </div>
+   </body>
 </html>

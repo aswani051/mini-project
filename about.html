@@ -1,126 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>About Form</title>
-	<style>
-    	body {
-        	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        	background: linear-gradient(135deg, #74ebd5, #9face6);
-        	margin: 0;
-        	display: flex;
-        	justify-content: center;
-        	align-items: center;
-        	height: 100vh;
-    	}
-    	.header {
-        	position: absolute;
-        	top: 0;
-        	width: 100%;
-        	padding: 10px 20px;
-        	display: flex;
-        	justify-content: space-between;
-        	align-items: center;
-    	}
-    	.header .logo img {
-            height: 80px;
-     
-    	}
-    	.header nav a {
-        	margin-left: 20px;
-        	text-decoration: none;
-        	color: #333;
-        	font-size: 14px;
-        	transition: color 0.3s;
-    	}
-    	.header nav a:hover {
-        	color: #667eea;
-    	}
-    	.about-container {
-        	background: #ffffff;
-        	padding: 30px;
-        	border-radius: 15px;
-        	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        	width: 100%;
-        	max-width: 400px;
-        	text-align: center;
-        	margin-top: 80px;
-    	}
-    	.about-container h1 {
-        	color: #333;
-        	margin-bottom: 20px;
-        	font-size: 24px;
-    	}
-    	.form-group {
-        	margin-bottom: 20px;
-    	}
-    	.form-group label {
-        	display: block;
-        	margin-bottom: 8px;
-        	color: #555;
-        	font-size: 14px;
-    	}
-    	.form-group textarea {
-        	width: 100%;
-        	padding: 12px;
-        	border: 1px solid #ccc;
-        	border-radius: 8px;
-        	font-size: 14px;
-        	transition: 0.3s;
-        	resize: none;
-        	height: 100px;
-    	}
-    	.form-group textarea:focus {
-        	border-color: #007bff;
-        	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-        	outline: none;
-    	}
-    	.submit-btn {
-        	width: 100%;
-        	background: linear-gradient(90deg, #667eea, #764ba2);
-        	color: white;
-        	padding: 12px;
-        	border: none;
-        	border-radius: 8px;
-        	cursor: pointer;
-        	font-size: 16px;
-        	font-weight: bold;
-        	transition: 0.3s;
-    	}
-    	.submit-btn:hover {
-        	background: linear-gradient(90deg, #764ba2, #667eea);
-        	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    	}
-    	.back-btn {
-        	display: inline-block;
-        	margin-top: 10px;
-        	color: #667eea;
-        	font-size: 14px;
-        	text-decoration: none;
-        	transition: color 0.3s;
-    	}
-    	.back-btn:hover {
-        	color: #764ba2;
-        	text-decoration: underline;
-    	}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Blue Line</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f9ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #1f3e58;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333333;
+      text-align: justify;
+    }
+
+    .back-button {
+      display: block;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .back-button a {
+      display: inline-block;
+      background-color: #1c476a;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #0c2947;
+    }
+  </style>
 </head>
 <body>
-	<header class="header">
-    	<a href="project.html" class="logo"><img src="home.png" alt="logo"></a>
- 
-	</header>
-	<div class="about-container">
-    	<h1>About Us</h1>
-    	<form>
-        	<div class="form-group">
-            	<label for="about">Tell us about yourself</label>
-            	<textarea id="about" name="about" placeholder="Write something about yourself..." required></textarea>
-        	</div>
-        	<button type="submit" class="submit-btn">Submit</button>
-    	</form>
-    	<a href="project.html" class="back-btn">Back to Home</a>
-	</div>
+  <div class="container">
+    <h1>About Blue Line</h1>
+    <p>
+      The <strong>Blue Line</strong> project is a web-based system designed to modernize water supply management using a clean, user-friendly, and visually engaging interface. Built using HTML and CSS, the project focuses on efficient data collection, real-time monitoring, and improved communication between users and administrators.
+    </p>
+    <p>
+      The system features multiple pages including a Home Page, Login Page, Survey Form Page, Confirmation Page, and a Success Completion Page. These pages are thoughtfully structured with a blue water-themed design, responsive layout, and smooth navigation for enhanced user experience.
+    </p>
+    <p>
+      Blue Line aims to improve water distribution efficiency, reduce wastage, and support sustainability efforts. With future enhancements like IoT integration, mobile apps, and AI-based analytics, this project contributes toward smarter water management and better community engagement.
+    </p>
+    <p>
+      By combining aesthetic design with practical functionality, Blue Line sets a foundation for future-ready water supply solutions that are accessible, scalable, and impactful.
+    </p>
+
+    <div class="back-button">
+      <a href="project.html">← Back to Home</a>
+    </div>
+  </div>
 </body>
 </html>
